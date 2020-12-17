@@ -1,0 +1,13 @@
+<h1>Welcome to Home page</h1>
+<a href="/">Back to Galaxy</a>
+<hr>
+<form method="post">
+    <input name="path">
+    <button>Display</button>
+</form>
+<ol>
+    {% for i in files %}
+        <li>{{i}}</li>
+    {% endfor %}
+</ol>
+<p>list of files in current folder</p>
